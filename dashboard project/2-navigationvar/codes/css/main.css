@@ -1,0 +1,22 @@
+@font-face {
+    font-family: yekan;
+    src: url("../fonts/iranyekanwebbold.ttf") format("truetype");
+}
+
+*{
+  font-family: yekan;
+}
+
+body {
+  background-color: #eee ;
+} 
+
+.sidebar{
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,.7) , rgba(0,0,0,.9)) , url(./../images/sidebar-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: -5px 7px 25px #999;
+}
+ 

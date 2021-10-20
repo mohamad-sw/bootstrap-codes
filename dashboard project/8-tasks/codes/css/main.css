@@ -1,0 +1,97 @@
+@font-face {
+    font-family: yekan;
+    src: url("../fonts/iranyekanwebbold.ttf") format("truetype");
+}
+
+*{
+  font-family: yekan;
+}
+
+body {
+  background-color: #eee ;
+} 
+
+.sidebar{
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,.7) , rgba(0,0,0,.9)) , url(./../images/sidebar-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: -5px 7px 25px #999;
+}
+ 
+
+.bottom-border{
+  border-bottom : 1px groove #eee;
+}
+
+.sidebar-link{
+  transition: all .4s;
+} 
+.sidebar-link:hover{
+  background-color: #444;
+  border-radius: 5px;
+} 
+
+.current{
+  background-color: #f44336;
+  border-radius: 7px;
+  box-shadow: 2px 5px 10px #111;
+  transition: all .4s;
+}
+.current:hover{
+  background-color: #f66436;
+  transform: translateY(-1px);
+ 
+}
+
+.search-button{
+ border-radius: 50%;
+ padding: 10px 16px;
+}
+
+.search-button:hover{
+  background-color: #eee;
+  transform: translateY(-1px);
+}
+
+.search-input{
+  background-color: transparent;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 2px solid #999;
+  transition: all .4s;
+}
+
+.search-input:focus{
+  background: transparent;
+  box-shadow: none;
+  border-bottom: 2px solid #dc3545;
+}
+
+
+.card-common{
+  box-shadow: 1px 2px 5px #999;
+  transition: all .4s;
+}
+
+.card-common:hover{
+  box-shadow: 2px 3px 15px #999;
+  transform: translateY(-1px);
+}
+
+
+.task-border{
+  border-right: 3px solid #f66436;
+}
+
+@media(max-width : 768px ){
+  .top-navbar{
+    position: static;
+  }
+
+  .sidebar{
+    position: static;
+    height: auto;
+  }
+}
